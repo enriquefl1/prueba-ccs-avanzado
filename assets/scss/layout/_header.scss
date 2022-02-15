@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width:$min-small) {
+    .header__img {
+    width: 50%;
+    }
+}

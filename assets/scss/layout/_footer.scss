@@ -1,0 +1,47 @@
+.footer {
+    display: flex;
+}
+
+.ftr {
+    background-color: $black;
+    color: $white;
+}
+
+.ftr__1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ftr__2--padd {
+    text-align: center;
+}
+
+@media screen and (min-width:$min-small) {
+    
+    .ftr{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:10px;
+        height: 110px;
+    }
+    
+    .ftr__1 {
+        grid-column: 1 / 2;
+        display: flex;
+        justify-content: center;
+        align-self:center;
+    }
+    .ftr__2 {
+        grid-column: 2 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ftr__2--padd {
+        padding: 0 15px;
+        
+    }
+    
+}
